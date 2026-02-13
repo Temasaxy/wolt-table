@@ -80,6 +80,8 @@ const Table_link = () => {
     };
     return(
         <Swiper
+        simulateTouch={false}
+        touchStartPreventDefault={false}
         modules={[Navigation]}
         navigation={{
             nextEl: ".slide1", 
