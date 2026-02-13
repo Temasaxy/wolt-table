@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     width: 400px;
-    height: 650px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.214);
+    background-color: rgb(255, 255, 255);
     border:2px, solid, rgb(249, 239, 134);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     border-radius: 10%;
@@ -27,7 +27,7 @@
     margin: 10px;
     padding: 0;
     color: rgb(0, 0, 0);
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(210, 209, 209);
     border: none;
     font-family: cursive;
     text-align: center;
@@ -48,7 +48,7 @@
     margin: 1px;
     padding: 0;
     color: rgb(0, 0, 0);
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(210, 209, 209);
     border: none;
     font-family: cursive;
     text-align: center;
@@ -105,6 +105,7 @@
     cursor: pointer;
 }
 .btn_get_chek {
+    margin-bottom: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     color: rgb(0, 0, 0);
     max-width: 100;
@@ -133,13 +134,15 @@
     margin: 20px;
 }
 .present_data{
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 12px 30px rgba(15, 23, 42, 0.16);
     transform: scale(1.1);
     border-radius: 10%;
     border: 2px, solid, rgb(249, 239, 134);
     margin: 100px;
+    margin-top: 350px;
     width: 400px;
-    height: 600px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,7 +159,39 @@
     text-align: center;
     background-color: rgb(249, 239, 134);
     border-radius: 999px;
+    transition: 0.3s;
 }
+.cour_table_result:hover{
+    transform: scale(1.03);
+}
+.cour_table_result2{
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    height: auto;
+    text-align: center;
+    background-color: rgb(249, 239, 134);
+    border-radius: 999px;
+    transition: 0.4s;
+}
+.cour_table_result2:hover{
+    transform: scale(1.03);
+}
+
+.cour_table_result3{
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    height: auto;
+    text-align: center;
+    background-color: rgb(249, 239, 134);
+    border-radius: 999px;
+    transition: 0.4s;
+}
+.cour_table_result3:hover{
+    transform: scale(1.03);
+}
+
 .name_of_table_cout_count{
     font-size: x-small;
 }
@@ -167,11 +202,12 @@
 }
 
 .scroll{
+    background-color: white;
     border:2px, solid, rgb(249, 239, 134);
     border-bottom: none;
     border-radius: 10px;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 150px;
     display: flex;
     width: 300px;
     display: flex;
@@ -194,7 +230,7 @@
 }
 .slide2{
     margin: 15px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     border: None;
     border-bottom: 2px solid transparent;
     background-color: rgba(240, 248, 255, 0);
@@ -220,4 +256,9 @@
 .line{
     border: 1px solid rgb(249, 239, 134);
     width: 400px;
+}
+.res{
+    font-weight: 300px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    padding-right: 110px;
 }
