@@ -18,9 +18,10 @@ const Table_link = () => {
         setInputone(event.target.value)
     }
     const subexelonclick = () => {
-        const exel_names = inpexel.trim().split(/\s+/).reduce((acc, curr, i, arr) => {
+        const cleanInput = inpexel.replace(/["']/g, ''); // Убираем все кавычки сразу
+        const exel_names = cleanInput.trim().split(/\s+/).reduce((acc, curr, i, arr) => {
             if (i % 2 === 0) {
-                acc.push(`${curr} ${arr[i + 1]}`);
+                acc.push(`${curr} ${arr[i + 1] || ''}`.trim());
             }
             return acc;
         }, [])
@@ -67,7 +68,6 @@ const Table_link = () => {
         setInputone('');
     }
     const chekclick = () => {
-        console.log(subexel)
         if (submittedValue.length > 0 && subexel.length > 0) {
             const chek = submittedValue.filter((el_new) => {
                 const normalizedNew = el_new.trim();
